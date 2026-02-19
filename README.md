@@ -69,7 +69,7 @@ Layered Architecture:
 ## API Endpoint
 
 POST /api/orders
-
+Endpoint /api/evaluate handling incoming orders.
 Example JSON available in /docs folder.
 
 ---
