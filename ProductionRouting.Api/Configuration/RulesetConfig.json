@@ -1,0 +1,107 @@
+{
+  "Rulesets": [
+    {
+      "Name": "Ruleset One",
+      "Conditions": [
+        {
+          "Field": "PublisherNumber",
+          "Operator": "Equals",
+          "Value": 99990
+        },
+        {
+          "Field": "OrderMethod",
+          "Operator": "Equals",
+          "Value": "POD"
+        }
+      ],
+      "Rules": [
+        {
+          "Name": "Rule 1",
+          "Conditions": [
+            {
+              "Field": "BindTypeCode",
+              "Operator": "Equals",
+              "Value": "PB"
+            },
+            {
+              "Field": "IsCountry",
+              "Operator": "Equals",
+              "Value": "US"
+            },
+            {
+              "Field": "PrintQuantity",
+              "Operator": "LessThanOrEqual",
+              "Value": 20
+            }
+          ],
+          "Result": {
+            "ProductionPlant": "US"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Ruleset Two",
+      "Conditions": [
+        {
+          "Field": "PublisherNumber",
+          "Operator": "Equals",
+          "Value": 99999
+        },
+        {
+          "Field": "OrderMethod",
+          "Operator": "Equals",
+          "Value": "POD"
+        }
+      ],
+      "Rules": [
+        {
+          "Name": "Rule 2",
+          "Conditions": [
+            {
+              "Field": "BindTypeCode",
+              "Operator": "Equals",
+              "Value": "CV"
+            },
+            {
+              "Field": "IsCountry",
+              "Operator": "Equals",
+              "Value": "UK"
+            },
+            {
+              "Field": "PrintQuantity",
+              "Operator": "LessThanOrEqual",
+              "Value": 20
+            }
+          ],
+          "Result": {
+            "ProductionPlant": "UK"
+          }
+        },
+        {
+          "Name": "Rule 3",
+          "Conditions": [
+            {
+              "Field": "BindTypeCode",
+              "Operator": "Equals",
+              "Value": "PB"
+            },
+            {
+              "Field": "IsCountry",
+              "Operator": "Equals",
+              "Value": "US"
+            },
+            {
+              "Field": "PrintQuantity",
+              "Operator": "GreaterThanOrEqual",
+              "Value": 20
+            }
+          ],
+          "Result": {
+            "ProductionPlant": "KGL"
+          }
+        }
+      ]
+    }
+  ]
+}
