@@ -61,4 +61,47 @@ Layered Architecture:
 1. Clone repository
 2. Update connection string in appsettings.json
 3. Run migrations:
+   
+4. Run API:
 
+---
+
+## API Endpoint
+
+POST /api/orders
+
+Example JSON available in /docs folder.
+
+---
+
+## File Drop
+
+Drop JSON or ZIP files in configured folder:
+
+C:\OrderDrop : update the folder into the appsetting.json -- "FileDrop"
+Add Sample directly .json files else .zip folders which contains .json files
+
+System processes automatically.
+
+---
+
+## Testing
+
+Run:
+
+dotnet test : 
+Includes:
+
+- RuleEngine tests
+- Condition tests
+- OrderFactExtractor tests
+- Integration tests
+
+Add SQL Script
+Add Sample JSON Files
+
+---
+
+## Author
+
+Virendra Mahavar
