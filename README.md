@@ -1,4 +1,24 @@
 # ProductionRouting – Ruleset Based Evaluation Engine
+Determine Production Plant Using Ruleset Evaluation : 
+Business Context
+Your organization manages printing and production orders that come from multiple external
+and internal clients.
+Each Order must be routed to the correct Production Plant based on a set of business
+rules that vary depending on the publisher, order method, country, and print quantity.
+The Production team currently performs this decision manually.
+The goal of this project is to automate the routing decision through a configurable
+Ruleset-based Evaluation System.
+
+Objective
+Design and implement a Ruleset Evaluation Engine that can determine the appropriate
+Production Plant for a given Order JSON input.
+Your solution must support:
+ Dynamic rule configuration (via database or JSON file)
+ Evaluation logic that matches incoming orders to the correct plant
+ Clean, scalable architecture suitable for enterprise use
+ Auditable logging and test coverage
+This assignment will evaluate your architecture design, code quality, extensibility, and
+ability to communicate your solution clearly.
 
 ## Overview
 
