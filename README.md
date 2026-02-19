@@ -60,7 +60,7 @@ Layered Architecture:
 
 1. Clone repository
 2. Update connection string in appsettings.json
-3. Run migrations:
+3. Run migrations: (Database can be created either via EF migrations or by running the SQL script located in /db folder.)
    
 4. Run API:
 
